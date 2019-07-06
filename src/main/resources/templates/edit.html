@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+	<head>
+		<meta charset="UTF-8">
+		<title>EDIT</title>
+		</head>
+	<body>
+	    <h1>Edit</h1>
+	    <hr />
+
+		<form method="post" th:action="@{/edit}" th:object="${userForm}">
+			<table>
+				<tr>
+					<th>Id</th>
+					<td><input type="text" th:field="*{userId}" readonly="readonly" /></td>
+				</tr>
+				<tr>
+					<th>Name</th>
+					<td><input type="text" th:field="*{userName}" /></td>
+				</tr>
+			</table>
+			<!-- 更新ボタン -->
+			<button type="submit" name="update">update</button>
+			<!-- 削除ボタン -->
+			<button type="submit" name="delete">delete</button>
+		</form>
+	</body>
+</html>

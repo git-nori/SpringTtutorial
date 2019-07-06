@@ -1,3 +1,6 @@
-INSERT INTO employee (employee_id, employee_name, age)
-VALUES(1, '山田太郎', 30);
-
+INSERT INTO m_user (user_id, user_name)
+VALUES(1, 'nori');
+INSERT INTO m_user (user_id, user_name)
+VALUES(2, 'mitsuyoshi');
+INSERT INTO m_user (user_id, user_name)
+VALUES(3, 'crazyT');
